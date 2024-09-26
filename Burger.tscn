@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://dky1ffxoewr1t"]
+
+[ext_resource type="Script" path="res://Burger.gd" id="1_ee60x"]
+
+[node name="CharacterBody2D" type="CharacterBody2D"]
+script = ExtResource("1_ee60x")

@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://dtn4b2ec6htpl"]
+
+[ext_resource type="Texture2D" uid="uid://cy3w8je4gdjl" path="res://Sprites/Cheese - Falling.png" id="1_4jism"]
+
+[node name="F_Cheese" type="Sprite2D"]
+texture = ExtResource("1_4jism")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]

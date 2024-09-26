@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://dwialsamhj2iq"]
+
+[ext_resource type="Script" path="res://GameScript.gd" id="1_cywsx"]
+[ext_resource type="PackedScene" uid="uid://cyc4doyoxoiw0" path="res://Burger Base.tscn" id="1_ljprh"]
+
+[node name="Game" type="Node2D"]
+script = ExtResource("1_cywsx")
+
+[node name="Burger Base" parent="." instance=ExtResource("1_ljprh")]
