@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://dky1ffxoewr1t"]
+
+[ext_resource type="Script" path="res://Burger.gd" id="1_ee60x"]
+[ext_resource type="Texture2D" uid="uid://d18up37neman3" path="res://Sprites/Burger base.png" id="2_c2ibo"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_w36gr"]
+size = Vector2(102, 24)
+
+[node name="Burger" type="CharacterBody2D"]
+collision_layer = 4
+collision_mask = 4
+script = ExtResource("1_ee60x")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_c2ibo")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-1, -2)
+shape = SubResource("RectangleShape2D_w36gr")

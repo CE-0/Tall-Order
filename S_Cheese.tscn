@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://l2o6femrhi4"]
+
+[ext_resource type="Texture2D" uid="uid://c0kwpvhwipotu" path="res://Sprites/Cheese - Stacked.png" id="1_45nfh"]
+
+[node name="S_Cheese" type="Sprite2D"]
+texture = ExtResource("1_45nfh")

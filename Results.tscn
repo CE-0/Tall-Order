@@ -1,0 +1,44 @@
+[gd_scene load_steps=3 format=3 uid="uid://cn07u331dxgcu"]
+
+[ext_resource type="PackedScene" uid="uid://krqfw4tpmj27" path="res://SaveDataManager.tscn" id="1_6xb7i"]
+[ext_resource type="Script" path="res://Results.gd" id="2_mikpe"]
+
+[node name="Results" type="Node2D"]
+
+[node name="Results Manager" type="Node2D" parent="."]
+script = ExtResource("2_mikpe")
+
+[node name="Save Data Manager" parent="." groups=["Persist"] instance=ExtResource("1_6xb7i")]
+
+[node name="Label" type="Label" parent="."]
+offset_left = -167.0
+offset_top = -177.036
+offset_right = 8.0
+offset_bottom = -151.036
+scale = Vector2(2, 2)
+text = "THANKS FOR PLAYING!"
+uppercase = true
+
+[node name="You Scored" type="Label" parent="."]
+offset_left = -165.665
+offset_top = -100.95
+offset_right = -125.665
+offset_bottom = -77.9498
+scale = Vector2(2, 2)
+text = "YOU SCORED X POINTS"
+horizontal_alignment = 1
+uppercase = true
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="Label2" type="Label" parent="."]
+offset_left = -301.819
+offset_top = 9.84189
+offset_right = 15.1812
+offset_bottom = 87.8419
+scale = Vector2(2, 2)
+text = "Press SPACE to return to main menu 
+
+Press R to retry game"
+horizontal_alignment = 1
+uppercase = true

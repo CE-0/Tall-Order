@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://darhw340wc2nt"]
+
+[ext_resource type="Texture2D" uid="uid://dv6ne7xutwgl" path="res://Sprites/Tomato - Stacked.png" id="1_jxk11"]
+
+[node name="S_Tomato" type="Sprite2D"]
+texture = ExtResource("1_jxk11")

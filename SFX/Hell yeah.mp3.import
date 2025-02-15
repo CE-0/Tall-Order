@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cfevgede6fupd"
+path="res://.godot/imported/Hell yeah.mp3-8284087affb3c8704fff0d13e4605cfa.mp3str"
+
+[deps]
+
+source_file="res://SFX/Hell yeah.mp3"
+dest_files=["res://.godot/imported/Hell yeah.mp3-8284087affb3c8704fff0d13e4605cfa.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

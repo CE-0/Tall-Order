@@ -1,0 +1,93 @@
+[gd_scene load_steps=7 format=3 uid="uid://mjevgu4g3yx5"]
+
+[ext_resource type="Script" path="res://GameScript.gd" id="1_cywsx"]
+[ext_resource type="PackedScene" uid="uid://dky1ffxoewr1t" path="res://Burger.tscn" id="2_2ug4v"]
+[ext_resource type="PackedScene" uid="uid://krqfw4tpmj27" path="res://SaveDataManager.tscn" id="2_y1scf"]
+[ext_resource type="Script" path="res://BurgerRaycast.gd" id="3_wn2dc"]
+[ext_resource type="PackedScene" uid="uid://bldwjtmxipsbk" path="res://Heart.tscn" id="4_54yqd"]
+[ext_resource type="PackedScene" uid="uid://cv0kb2lu5sa4m" path="res://Black bar.tscn" id="5_17857"]
+
+[node name="Game" type="Node2D"]
+
+[node name="Game Manager" type="Node2D" parent="."]
+process_mode = 1
+script = ExtResource("1_cywsx")
+
+[node name="Save Data Manager" parent="." groups=["Persist"] instance=ExtResource("2_y1scf")]
+process_mode = 1
+
+[node name="Burger" parent="." instance=ExtResource("2_2ug4v")]
+process_mode = 1
+position = Vector2(0, 228)
+disable_mode = 2
+
+[node name="RayCast2D" type="RayCast2D" parent="Burger"]
+target_position = Vector2(0, -16)
+collision_mask = 2
+hit_from_inside = true
+collide_with_areas = true
+script = ExtResource("3_wn2dc")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+process_mode = 1
+scale = Vector2(2, 2)
+
+[node name="Label" type="Label" parent="Camera2D"]
+z_index = 1
+offset_left = 238.0
+offset_top = -161.0
+offset_right = 289.0
+offset_bottom = -135.0
+text = "SCORE"
+
+[node name="Score Display" type="Label" parent="Camera2D"]
+z_index = 1
+offset_left = 238.0
+offset_top = -128.5
+offset_right = 287.0
+offset_bottom = -102.5
+text = "0"
+horizontal_alignment = 2
+
+[node name="Heart" parent="Camera2D" instance=ExtResource("4_54yqd")]
+visible = false
+z_index = 1
+position = Vector2(-262.5, -136.5)
+scale = Vector2(0.5, 0.5)
+
+[node name="Heart2" parent="Camera2D" instance=ExtResource("4_54yqd")]
+visible = false
+z_index = 1
+position = Vector2(-262.5, -111.5)
+scale = Vector2(0.5, 0.5)
+
+[node name="Heart3" parent="Camera2D" instance=ExtResource("4_54yqd")]
+visible = false
+z_index = 1
+position = Vector2(-262.5, -86.5)
+scale = Vector2(0.5, 0.5)
+
+[node name="Heart4" parent="Camera2D" instance=ExtResource("4_54yqd")]
+visible = false
+z_index = 1
+position = Vector2(-262.5, -61.5)
+scale = Vector2(0.5, 0.5)
+
+[node name="Heart5" parent="Camera2D" instance=ExtResource("4_54yqd")]
+visible = false
+z_index = 1
+position = Vector2(-262.5, -36.5)
+scale = Vector2(0.5, 0.5)
+
+[node name="StaticBody2D" parent="Camera2D" instance=ExtResource("5_17857")]
+z_as_relative = false
+position = Vector2(-258.5, -56.5)
+scale = Vector2(0.5, 0.5)
+
+[node name="StaticBody2D2" parent="Camera2D" instance=ExtResource("5_17857")]
+z_as_relative = false
+position = Vector2(228.5, -57.5)
+scale = Vector2(0.5, 0.5)
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+process_mode = 3

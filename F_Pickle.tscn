@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://dpvfdsxrxgmp8"]
+
+[ext_resource type="Script" path="res://FallingObject.gd" id="1_055mc"]
+[ext_resource type="Texture2D" uid="uid://bn084j8iyplss" path="res://Sprites/Pickle - Falling.png" id="1_ost2j"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_jxdy4"]
+size = Vector2(65, 74)
+
+[node name="F_Pickle" type="CharacterBody2D"]
+collision_layer = 2
+script = ExtResource("1_055mc")
+isGood = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(9.5, -2)
+shape = SubResource("RectangleShape2D_jxdy4")
+one_way_collision = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_ost2j")

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://b7lavmv6kquli"
+path="res://.godot/imported/Level up.mp3-7ea6e9d326797ce639d69a80c10b5248.mp3str"
+
+[deps]
+
+source_file="res://SFX/Level up.mp3"
+dest_files=["res://.godot/imported/Level up.mp3-7ea6e9d326797ce639d69a80c10b5248.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

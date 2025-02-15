@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://c01wddhrldci2"]
+
+[ext_resource type="Texture2D" uid="uid://shsmbi1qcngv" path="res://Sprites/Pickle - Stacked.png" id="1_w56t2"]
+
+[node name="S_Pickle" type="Sprite2D"]
+texture = ExtResource("1_w56t2")

@@ -1,0 +1,27 @@
+[gd_scene load_steps=2 format=3 uid="uid://h0vhletredg4"]
+
+[ext_resource type="Script" path="res://TitleScreen.gd" id="1_wvvc3"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Title Screen Manager" type="Node2D" parent="."]
+script = ExtResource("1_wvvc3")
+
+[node name="Label" type="Label" parent="."]
+offset_left = -321.928
+offset_top = -187.964
+offset_right = -191.928
+offset_bottom = -153.964
+scale = Vector2(5, 4.995)
+text = "TALL ORDER"
+horizontal_alignment = 1
+
+[node name="Label2" type="Label" parent="."]
+offset_left = -165.928
+offset_top = 66.0359
+offset_right = 13.0721
+offset_bottom = 92.0359
+scale = Vector2(2, 2)
+text = "PRESS SPACE TO START"
+
+[node name="Camera2D" type="Camera2D" parent="."]

@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://brrmbdituur1l"]
+
+[ext_resource type="Texture2D" uid="uid://bq37xewrc0m3r" path="res://Sprites/Lettuce - Stacked.png" id="1_w148q"]
+
+[node name="S_Lettuce" type="Sprite2D"]
+texture = ExtResource("1_w148q")

@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://dr4i8xotnpsdi"]
+
+[ext_resource type="Texture2D" uid="uid://cm21sobfin4g" path="res://Sprites/Onion - Stacked.png" id="1_j2d7r"]
+
+[node name="S_Onion" type="Sprite2D"]
+texture = ExtResource("1_j2d7r")

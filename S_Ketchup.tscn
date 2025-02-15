@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://cgwa86wq8yk2o"]
+
+[ext_resource type="Texture2D" uid="uid://cpbs8rli83ut7" path="res://Sprites/Ketchup - Stacked.png" id="1_q4jdl"]
+
+[node name="S_Ketchup" type="Sprite2D"]
+texture = ExtResource("1_q4jdl")

@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=3 uid="uid://cv0kb2lu5sa4m"]
+
+[ext_resource type="Texture2D" uid="uid://cfyff1mi0fj2q" path="res://Sprites/Black background.png" id="1_0lawp"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3sbow"]
+size = Vector2(176, 644)
+
+[node name="StaticBody2D" type="StaticBody2D"]
+collision_layer = 4
+collision_mask = 4
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(33.5, 115)
+scale = Vector2(2.61369, 6.48)
+texture = ExtResource("1_0lawp")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(30, 113)
+scale = Vector2(1.56, 1)
+shape = SubResource("RectangleShape2D_3sbow")

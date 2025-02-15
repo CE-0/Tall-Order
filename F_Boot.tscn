@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://q7xio30i6m6x"]
+
+[ext_resource type="Script" path="res://FallingObject.gd" id="1_howic"]
+[ext_resource type="Texture2D" uid="uid://3hj2nrogub1t" path="res://Sprites/Boot.png" id="2_b7hvx"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_i78bh"]
+size = Vector2(76, 53)
+
+[node name="F_Boot" type="CharacterBody2D"]
+collision_layer = 2
+collision_mask = 2
+script = ExtResource("1_howic")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(11, -8.5)
+shape = SubResource("RectangleShape2D_i78bh")
+one_way_collision = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_b7hvx")

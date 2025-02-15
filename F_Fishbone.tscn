@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://d1h7kjoja1par"]
+
+[ext_resource type="Script" path="res://FallingObject.gd" id="1_3cebv"]
+[ext_resource type="Texture2D" uid="uid://dxdbcm2aonxiw" path="res://Sprites/Fishbone.png" id="2_qxmd1"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_nuv1e"]
+size = Vector2(68, 70)
+
+[node name="F_Fishbone" type="CharacterBody2D"]
+collision_layer = 2
+script = ExtResource("1_3cebv")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(8, -5)
+shape = SubResource("RectangleShape2D_nuv1e")
+one_way_collision = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_qxmd1")
